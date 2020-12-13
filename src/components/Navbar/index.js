@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Header, Nav, List, ListItem, CartIcon } from './styles';
+import { Header, Nav, List, ListItem, CartIcon } from './style';
 
-const NavigationBar = () => {
+const Navbar = () => {
   return (
     <Header>
       <Nav>
@@ -24,4 +24,4 @@ const NavigationBar = () => {
   );
 };
 
-export default NavigationBar;
+export default Navbar;
