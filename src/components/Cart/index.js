@@ -1,21 +1,28 @@
 import React from 'react';
-import { Title, List } from './style';
+import { Container, Title, List, TotalPrice, Total, Price, Checkout, ShopLink } from './style';
+import { Link } from 'react-router-dom';
 import CartItem from '../CartItem';
 
 import chair from '../../img/chair.png';
 
 const Cart = () => {
   return (
-    <div>
+    <Container>
       <Title>CART</Title>
       <List>
         <CartItem img={chair} />
-
-        <CartItem img={chair} />
-
         <CartItem img={chair} />
       </List>
-    </div>
+      <TotalPrice>
+        <Total>Total</Total>
+        <Price>1500</Price>
+      </TotalPrice>
+
+      <Checkout />
+      <Link to="/shop">
+        <ShopLink>Continue Shopping</ShopLink>
+      </Link>
+    </Container>
   );
 };
 

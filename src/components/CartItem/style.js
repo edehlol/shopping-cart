@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Product = ({ children }) => {
-  return <div className="flex mb-8 justify-around">{children}</div>;
+  return <li className="flex mb-8 justify-between">{children}</li>;
 };
 export const Thumbnail = ({ src }) => {
   return <img className="w-28 h-28 rounded-xl" src={src} />;
